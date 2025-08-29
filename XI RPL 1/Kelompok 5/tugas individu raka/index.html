@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Belajar Git Pull & Push</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+
+  <header>
+    <h1>Belajar Git Pull & Git Push</h1>
+    <p>Penjelasan singkat dan contoh penggunaan Git</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Apa itu <code>git pull</code>?</h2>
+      <p><code>git pull</code> digunakan untuk mengambil dan menggabungkan perubahan terbaru dari remote repository ke local repository.</p>
+      <p><strong>Perintah:</strong></p>
+      <pre><code>git pull origin main</code></pre>
+      <div class="image-placeholder">
+        <p>Contohnya seperti gambar berikut.</p>
+        <img src="1.png" alt="Contoh Git Pull" />
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Apa itu <code>git push</code>?</h2>
+      <p><code>git push</code> digunakan untuk mengirim perubahan lokal ke repository remote.</p>
+      <p><strong>Perintah:</strong></p>
+      <pre><code>git push origin main</code></pre>
+      <div class="image-placeholder">
+        <p>Contohnya seperti gambar berikut</p>
+        <img src="2.png" alt="Contoh Git Push" />
+      </div>
+    </section>
+
+    <section class="card toggle-section">
+      <h2 onclick="toggleExplanation()"> Penjelasan Singkat 🔄</h2>
+      <div id="extra-explanation" style="display: none;">
+        <p><code></code> 🔄 git pull
+
+Digunakan untuk:
+Mengambil perubahan terbaru dari repository jarak jauh (remote) dan menggabungkannya ke repository lokal.
+
+Contoh:
+
+git pull origin main
+
+
+Artinya:
+Ambil update dari branch main di remote (misalnya GitHub) lalu gabungkan ke branch lokal kamu.</p>
+        <p><code></code> ⬆️ git push
+
+Digunakan untuk:
+Mengirim (upload) perubahan dari repository lokal ke repository jarak jauh (remote).
+
+Contoh:
+
+git push origin main
+
+
+Artinya:
+Kirim perubahan yang kamu buat di branch main lokal ke branch main di remote (GitHub).</p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Website edukasi Git oleh [Raka Nurdiana]</p>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
